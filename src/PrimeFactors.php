@@ -4,18 +4,15 @@ class PrimeFactors
 {
 	public function generate($number)
 	{
+		$primes = [];
+
 		if ($number === 4) {
-			return [2, 2];
+			$primes = [2, 2];
+		}
+		elseif ($number > 1) {
+			$primes[] = $number;
 		}
 
-		if ($number > 2) {
-			return [3];
-		}
-
-		if ($number > 1) {
-			return [2];
-		}
-
-		return [];
+		return $primes;
 	}
 }
