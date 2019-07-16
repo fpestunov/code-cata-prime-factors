@@ -6,10 +6,12 @@ class PrimeFactors
 	{
 		$primes = [];
 
-		if ($number === 4) {
-			$primes = [2, 2];
+		while ($number % 2 === 0) {
+			$primes[] = 2;
+			$number /= 2;
 		}
-		elseif ($number > 1) {
+		
+		if ($number > 1) {
 			$primes[] = $number;
 		}
 
