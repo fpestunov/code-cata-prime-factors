@@ -2,6 +2,7 @@
 
 ## Условия задачи
 
+```
 1 => []
 2 => [2]
 4 => 2 * 2
@@ -9,12 +10,13 @@
 6 => 2 * 3
 12 => 2 * 2 * 3
 100 => 2 * 2 * 5 * 5
+```
 
 ## Начало (подготовка)
 
 - создаем `composer.json`
 - `composer install`
-- создаем класс тестирования Боулинг `vendor/ bin/phpspec describe PrimeFactors`
+- создаем класс тестирования Боулинг `vendor/bin/phpspec describe PrimeFactors`
 - запускаем тест `vendor/bin/phpspec run` и создаем класс приложения
 
 ## Приступаем к разработке
